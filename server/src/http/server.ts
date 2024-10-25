@@ -5,12 +5,19 @@ import {
   type ZodTypeProvider,
 } from 'fastify-type-provider-zod';
 import { createGoal } from '../features/create-goal';
+import { getWeekPendingGoals } from '../features/get-week-pending-goals';
 import z from 'zod';
 
 const app = fastify().withTypeProvider<ZodTypeProvider>();
 
 app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
+
+app.get('/pending-goals', async () => {
+  const { pendingGoals } = await getWeekPendingGoals();
+
+  return { pendingGoals };
+});
 
 app.post(
   '/goals',
