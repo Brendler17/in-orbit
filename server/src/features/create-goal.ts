@@ -18,9 +18,9 @@ export async function createGoal({
     })
     .returning();
 
-  const goal = response[0];
+  const newGoal = response[0];
 
   return {
-    goal,
+    newGoal,
   };
 }
