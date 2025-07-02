@@ -1,7 +1,7 @@
 import { db } from '../db';
 import { goals } from '../db/schema';
 
-interface CreateGoalRequest {
+export interface CreateGoalRequest {
   title: string;
   desiredWeeklyFrequency: number;
 }
