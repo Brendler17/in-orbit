@@ -12,10 +12,10 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@types/node": "^22.15.29",
-    "drizzle-kit": "^0.31.1",
-    "tsx": "^4.19.4",
+    "@biomejs/biome": "2.0.6",
+    "@types/node": "^24.0.10",
+    "drizzle-kit": "^0.31.4",
+    "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
@@ -23,9 +23,12 @@
     "@paralleldrive/cuid2": "^2.2.2",
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.44.2",
-    "fastify": "^5.3.3",
-    "fastify-type-provider-zod": "^4.0.2",
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.1",
     "postgres": "^3.4.7",
-    "zod": "^3.25.51"
+    "zod": "^3.25.71"
+  },
+  "overrides": {
+    "esbuild": "0.28.0"
   }
 }
