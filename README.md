@@ -1,4 +1,4 @@
-# <img src="https://github.com/Brendler17/in-orbit/blob/main/client/public/icon.svg" width="20" alt="in.orbit logo"/> in.orbit
+# <img src="https://github.com/Brendler17/in-orbit/blob/main/client/public/icon.svg" width="40" alt="in.orbit logo"/> in.orbit
 
 <p align="center">
   Sistema de gerenciamento de metas semanais para acompanhar hábitos, registrar progresso e manter o foco nos objetivos.
