@@ -30,7 +30,7 @@ export function PendingGoals() {
         return (
           <OutlineButton
             key={goal.id}
-            disabled={goal.completionCount >= goal.desiredWeeklyFrequency}
+            disabled={goal.completedCount >= goal.desiredWeeklyFrequency}
             onClick={() => handleCompleteGoal(goal.id)}
           >
             <Plus className="size-4 text-zinc-600" />

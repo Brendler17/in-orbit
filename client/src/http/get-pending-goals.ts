@@ -2,7 +2,7 @@ type PendingGoalsResponse = {
   id: string;
   title: string;
   desiredWeeklyFrequency: number;
-  completionCount: number;
+  completedCount: number;
 }[];
 
 export async function getPendingGoals(): Promise<PendingGoalsResponse> {
