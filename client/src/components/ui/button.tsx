@@ -1,4 +1,4 @@
-import { forwardRef, type ComponentProps } from 'react';
+import { type ComponentProps, forwardRef } from 'react';
 import { tv, type VariantProps } from 'tailwind-variants';
 
 const button = tv({
