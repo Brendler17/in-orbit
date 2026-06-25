@@ -1,8 +1,4 @@
-# 🎯 in.orbit
-
-<p align="center">
-  <img src="https://github.com/Brendler17/in-orbit/blob/main/client/public/icon.svg" width="180" alt="in.orbit logo"/>
-</p>
+# <img src="https://github.com/Brendler17/in-orbit/blob/main/client/public/icon.svg" width="180" alt="in.orbit logo"/> in.orbit
 
 <p align="center">
   Sistema de gerenciamento de metas semanais para acompanhar hábitos, registrar progresso e manter o foco nos objetivos.
@@ -19,7 +15,7 @@
 
 ## 📑 Sumário
 
-- [🎯 in.orbit](#-inorbit)
+- [ in.orbit](#-inorbit)
   - [📑 Sumário](#-sumário)
   - [💻 Sobre](#-sobre)
   - [✨ Funcionalidades](#-funcionalidades)
@@ -165,7 +161,7 @@ http://localhost:3333
 ### Frontend
 
 ```bash
-cd web
+cd client
 
 npm install
 
@@ -192,8 +188,9 @@ Exemplo:
 
 ```env
 PORT=3333
-DATABASE_URL=postgresql://docker:docker@localhost:5432/inorbit
+DATABASE_URL=postgresql://USUARIO:SENHA@HOST:PORTA/BANCO
 ```
+Utilizando Docker: caso utilize o docker-compose disponibilizado no projeto, as credenciais e o nome do banco já estarão definidos no próprio arquivo docker-compose.yml. Basta utilizar esses mesmos valores para montar a DATABASE_URL.
 
 ---
 
