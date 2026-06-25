@@ -1,6 +1,6 @@
-import { z } from 'zod';
-import { createGoal, type CreateGoalRequest } from '../../features/create-goal';
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod';
+import { z } from 'zod';
+import { type CreateGoalRequest, createGoal } from '../../features/create-goal';
 
 export const createGoalRoute: FastifyPluginAsyncZod = async app => {
   app.post(
